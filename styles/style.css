@@ -44,15 +44,15 @@
     
     body {
         font-size: 16px !important;
-        font-weight: normal !important;
+        font-weight: 300 !important;
         font-family: 'Brown', Inter, sans-serif !important;
-        border: 1px solid white !important;
+        border: 0px solid white !important;
         color: #ffffff !important;
     }
     
     .navbar {
         background-color: #1B1B1B !important;
-        border: 1px solid white !important;
+        border: 0px solid white !important;
     }
     
     .navbar-item,
@@ -66,7 +66,7 @@
         font-weight: 100 !important;
         line-height: 1.125;
         font-family: 'Recoleta', Arial, sans-serif !important;
-        border: 1px solid white !important;
+        border: 0px solid white !important;
     }
     
     @media screen and (min-width: 1216px) {}
@@ -76,7 +76,7 @@
     }
     
     .column {
-        border: 1px solid white !important;
+        border: 0px solid white !important;
         text-align: center !important;
     }
     
@@ -85,17 +85,17 @@
     }
     
     #advert {
-        border: 1px solid yellow !important;
+        border: 0px solid yellow !important;
     }
     
     .hero-body {
         padding-top: 100px !important;
-        padding-bottom: 60px !important;
+        padding-bottom: 40px !important;
         padding-left: 16px;
     }
     
     .container {
-        border: 1px solid white !important;
+        border: 0px solid white !important;
         text-align: center !important;
     }
     
@@ -141,4 +141,11 @@
         color: #ffffff !Important;
         cursor: pointer;
         text-decoration: none;
+    }
+    
+    a:hover {
+        color: #ffffff !Important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 400 !important;
     }
