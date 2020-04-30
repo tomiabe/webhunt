@@ -21,18 +21,18 @@
     
     @font-face {
         font-family: 'Recoleta';
-        src: url(../assets/font/Recoleta/Recoleta-Bold.woff);
+        src: url(../assets/fonts/Recoleta/Recoleta-Bold.woff);
         font-weight: bold;
     }
     
     @font-face {
         font-family: 'Brown';
-        src: url(../assets/font/Brown/Brown-Regular.woff);
+        src: url(../assets/fonts/Brown/Brown-Regular.woff);
     }
     
     @font-face {
         font-family: 'Brown';
-        src: url(../assets/font/Brown/Brown-Bold.woff);
+        src: url(../assets/fonts/Brown/Brown-Bold.woff);
         font-weight: bold;
     }
     
