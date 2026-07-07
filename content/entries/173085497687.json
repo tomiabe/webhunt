@@ -1,7 +1,7 @@
 {
   "title": "Clip",
   "link": "https://clip.ng/",
-  "type": "Product / Startup",
+  "type": "Tool / Open Source",
   "tags": [
     "design",
     "development",
@@ -22,7 +22,7 @@
     "inspiration"
   ],
   "date": "2018-04-19",
-  "blurb": "Clip is a clip product on WebHunt.",
+  "blurb": "Frame studio tool that lets creators design campaign frames and profile-photo overlays, then share them via a single link.",
   "image": "media/173085497687.jpg",
   "credit": {
     "type": null,

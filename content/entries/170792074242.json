@@ -1,7 +1,7 @@
 {
   "title": "Go Vote!",
   "link": "http://govote.ng/",
-  "type": "Product / Startup",
+  "type": "Institution / Academic / NGO",
   "tags": [
     "design",
     "development",
@@ -14,7 +14,7 @@
     "frontend"
   ],
   "date": "2018-02-12",
-  "blurb": "Go Vote! is a vote product on WebHunt.",
+  "blurb": "Civic tech platform for Nigerian voter education and electoral mobilization.",
   "image": "media/170792074242.png",
   "credit": {
     "type": null,

@@ -1,7 +1,7 @@
 {
   "title": "Stutern",
   "link": "https://stutern.com/",
-  "type": "Tool / Open Source",
+  "type": "Product / Startup",
   "tags": [
     "design",
     "ui",
@@ -14,7 +14,7 @@
     "webdesign"
   ],
   "date": "2017-01-16",
-  "blurb": "Stutern is an internship tool on WebHunt.",
+  "blurb": "Edtech platform that trains young Africans in tech skills like UI/UX, web development, and data science, then connects graduates with employers.",
   "image": "media/155963267552.png",
   "credit": {
     "type": null,

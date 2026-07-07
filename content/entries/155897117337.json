@@ -16,7 +16,7 @@
     "service"
   ],
   "date": "2017-01-15",
-  "blurb": "Push.ng is a white tool on WebHunt.",
+  "blurb": "Notification API service for developers, originally a redirect service.",
   "image": "media/155897117337.png",
   "credit": {
     "type": null,

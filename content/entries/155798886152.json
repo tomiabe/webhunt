@@ -14,7 +14,7 @@
     "app"
   ],
   "date": "2017-01-13",
-  "blurb": "Cruncher is a service tool on WebHunt.",
+  "blurb": "Spending analysis app that processes bank statements to visualize income and expenditure patterns.",
   "image": "media/155798886152.png",
   "credit": {
     "type": null,

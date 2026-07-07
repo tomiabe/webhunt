@@ -1,7 +1,7 @@
 {
   "title": "Pass.ng",
   "link": "https://pass.ng/",
-  "type": "Tool / Open Source",
+  "type": "Product / Startup",
   "tags": [
     "green",
     "ui",
@@ -14,7 +14,7 @@
     "nigeria"
   ],
   "date": "2017-01-14",
-  "blurb": "Pass.ng is a green tool on WebHunt.",
+  "blurb": "Online exam preparation platform helping Nigerian students prepare for JAMB, WAEC, and Post UTME with mock tests and analytics.",
   "image": "media/155864368307.png",
   "credit": {
     "type": null,

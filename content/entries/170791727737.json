@@ -1,7 +1,7 @@
 {
   "title": "Go Vote!",
   "link": "https://govote.org.ng/#/",
-  "type": "Tool / Open Source",
+  "type": "Institution / Academic / NGO",
   "tags": [
     "design",
     "development",
@@ -14,7 +14,7 @@
     "inspiration"
   ],
   "date": "2018-02-12",
-  "blurb": "Go Vote! is a cool tool on WebHunt.",
+  "blurb": "Civic tech platform by Co-Creation Hub that simplifies Nigeria's electoral process through voter education and PVC registration guidance.",
   "image": "media/170791727737.png",
   "credit": {
     "type": null,
