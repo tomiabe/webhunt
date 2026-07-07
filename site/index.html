@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebHunt — African internet, curated</title>
+  <meta name="description" content="A gallery of websites, products and digital experiences made by Africans." />
+  <link rel="preload" href="fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#gallery">Skip to gallery</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">WebHunt</span>
+      <span class="brand-tagline">the internet, made in Africa</span>
+    </div>
+
+    <div class="toolbar">
+      <div class="search-field">
+        <svg class="icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M17 17L13.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input id="search" type="search" placeholder="Search title or tag…" aria-label="Search" />
+      </div>
+
+      <div class="cols-control" role="group" aria-label="Grid columns">
+        <button type="button" class="cols-btn" id="cols-dec" aria-label="Fewer columns">–</button>
+        <span id="cols-label">4</span>
+        <button type="button" class="cols-btn" id="cols-inc" aria-label="More columns">+</button>
+      </div>
+
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon icon-sun" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 1.5v2M10 16.5v2M18.5 10h-2M3.5 10h-2M15.8 4.2l-1.4 1.4M5.6 14.4l-1.4 1.4M15.8 15.8l-1.4-1.4M5.6 5.6L4.2 4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M17 11.5A7 7 0 018.5 3 7 7 0 1017 11.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="type-filters" id="type-filters" aria-label="Filter by type"></nav>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery" aria-live="polite"></section>
+    <p id="empty-state" class="empty-state" hidden>Nothing matches — try another search or filter.</p>
+  </main>
+
+  <dialog id="detail-modal" class="detail-modal">
+    <button type="button" class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <div class="modal-media">
+      <img id="modal-image" alt="" />
+    </div>
+    <div class="modal-body">
+      <span class="modal-type" id="modal-type"></span>
+      <h2 id="modal-title"></h2>
+      <p class="modal-meta" id="modal-meta"></p>
+      <p class="modal-blurb" id="modal-blurb"></p>
+      <div class="modal-tags" id="modal-tags"></div>
+      <a id="modal-link" class="modal-visit" href="#" target="_blank" rel="noopener noreferrer">
+        Visit site
+        <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <p>WebHunt — hunting the best of the African internet, one site at a time.</p>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
