@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WebHunt — African internet, curated</title>
-  <meta name="description" content="A gallery of websites, products and digital experiences made by Africans." />
+  <meta name="description" content="A gallery of African-made internet things." />
+  <link rel="icon" type="image/png" href="logo/webhunt-square-white-bk.png" />
   <link rel="preload" href="fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -13,8 +14,10 @@
 
   <header class="site-header">
     <div class="brand">
+      <img class="brand-logo brand-logo-light" src="logo/webhunt-black.png" alt="" width="28" height="28" />
+      <img class="brand-logo brand-logo-dark" src="logo/webhunt-white.png" alt="" width="28" height="28" />
       <span class="brand-mark">WebHunt</span>
-      <span class="brand-tagline">the internet, made in Africa</span>
+      <span class="brand-tagline">A gallery of African-made internet things.</span>
     </div>
 
     <div class="toolbar">
@@ -69,8 +72,13 @@
   </dialog>
 
   <footer class="site-footer">
-    <p>WebHunt — hunting the best of the African internet, one site at a time.</p>
+    <p>WebHunt — A gallery of African-made internet things.</p>
+    <p>Made by <a href="https://studio.tomiabe.com" target="_blank" rel="noopener noreferrer">Tomi Abe Studio</a></p>
   </footer>
+
+  <button type="button" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 13V3M8 3L3.5 7.5M8 3l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
 
   <script src="js/app.js" defer></script>
 </body>

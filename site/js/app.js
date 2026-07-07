@@ -17,6 +17,7 @@
   const modalMeta = document.getElementById("modal-meta");
   const modalBlurb = document.getElementById("modal-blurb");
   const modalLink = document.getElementById("modal-link");
+  const scrollTopBtn = document.getElementById("scroll-top");
 
   const MIN_COLS = 2;
   const MAX_COLS = 8;
@@ -274,11 +275,25 @@
   });
   modal.addEventListener("cancel", () => closeModal());
 
+  // ---------- Scroll to top ----------
+
+  function initScrollTop() {
+    window.addEventListener("scroll", () => {
+      scrollTopBtn.classList.toggle("visible", window.scrollY > 500);
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  }
+
   // ---------- Init ----------
 
   async function init() {
     initTheme();
     initCols();
+    initScrollTop();
     renderTypeFilters();
 
     try {
