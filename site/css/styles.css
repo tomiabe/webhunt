@@ -424,7 +424,13 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.9rem;
+  white-space: nowrap;
   transition: opacity 0.2s ease;
+}
+.modal-visit svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
 }
 .modal-visit:hover {
   opacity: 0.82;

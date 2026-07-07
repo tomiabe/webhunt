@@ -198,6 +198,7 @@
   // ---------- Modal ----------
 
   function openModal(entry, cardEl) {
+    document.body.style.overflow = "hidden";
     modalImage.src = entry.image || "";
     modalImage.alt = entry.title || "";
     modalType.textContent = entry.type || "";
@@ -245,6 +246,7 @@
 
   function closeModal() {
     if (modal.open) modal.close();
+    document.body.style.overflow = "";
   }
 
   modalClose.addEventListener("click", closeModal);
