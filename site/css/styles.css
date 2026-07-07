@@ -237,7 +237,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(max(150px, calc((100% - (var(--cols) - 1) * var(--gallery-gap)) / var(--cols))), 1fr)
+    minmax(max(260px, calc((100% - (var(--cols) - 1) * var(--gallery-gap)) / var(--cols))), 1fr)
   );
   gap: var(--gallery-gap);
   padding: 1.5rem;
@@ -249,6 +249,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
     padding: 1rem;
   }
   .site-header { padding: 1rem 1rem 0.5rem; }
+  .cols-control { display: none; }
 }
 
 .card {
@@ -273,7 +274,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 }
 
 .card-media {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--card-bg);
 }
@@ -320,7 +321,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
   border: none;
   border-radius: 18px;
   padding: 0;
-  max-width: min(560px, 92vw);
+  max-width: min(680px, 92vw);
   width: 100%;
   color: var(--fg);
   background: var(--bg);
@@ -358,7 +359,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 }
 
 .modal-media {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   background: var(--card-bg);
   overflow: hidden;
 }
