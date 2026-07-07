@@ -1,0 +1,66 @@
+media:
+  input: media
+  output: /media
+
+content:
+  - name: entries
+    label: Gallery Entries
+    type: collection
+    path: content/entries
+    format: json
+    view:
+      primary: title
+      fields: [type, date, needs_review]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: link
+        label: Website link
+        type: string
+        required: true
+      - name: type
+        type: select
+        required: true
+        options:
+          values:
+            - Product / Startup
+            - Agency / Studio
+            - Portfolio
+            - E-commerce
+            - Media / Blog
+            - Institution / Academic / NGO
+            - Community / Event
+            - Tool / Open Source
+      - name: tags
+        type: string
+        list: true
+      - name: date
+        label: Date published
+        type: date
+      - name: blurb
+        label: One-sentence description
+        type: text
+      - name: image
+        type: image
+      - name: credit
+        type: object
+        fields:
+          - name: type
+            type: select
+            required: false
+            options:
+              values:
+                - In-house
+                - Agency
+                - Individual
+                - Freelancer
+          - name: name
+            type: string
+            required: false
+      - name: needs_review
+        label: Needs review
+        description: Auto-generated during migration — check title, type, and blurb, then uncheck.
+        type: boolean

@@ -1,0 +1,30 @@
+{
+  "title": "Tix",
+  "link": "https://tix.com.ng/",
+  "type": "Product / Startup",
+  "tags": [
+    "ticket",
+    "product",
+    "design",
+    "ux",
+    "nigeria",
+    "dope",
+    "ui",
+    "webdev",
+    "webproduct",
+    "events",
+    "shows",
+    "booking",
+    "illustration",
+    "simple",
+    "payment"
+  ],
+  "date": "2020-04-14",
+  "blurb": "Tix is a ticket product on WebHunt.",
+  "image": "/media/615359587949953024.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}

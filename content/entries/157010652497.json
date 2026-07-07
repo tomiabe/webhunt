@@ -1,0 +1,28 @@
+{
+  "title": "HelloSam!",
+  "link": "http://www.hellosam.ng/",
+  "type": "Product / Startup",
+  "tags": [
+    "green",
+    "design",
+    "webdesign",
+    "service",
+    "informational",
+    "resource",
+    "uiux",
+    "webinspiration",
+    "nigeria",
+    "white",
+    "dope",
+    "reviews",
+    "webdev"
+  ],
+  "date": "2017-02-09",
+  "blurb": "HelloSam! is a green product on WebHunt.",
+  "image": "/media/157010652497.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}

@@ -1,0 +1,24 @@
+{
+  "title": "MyMusic NG",
+  "link": "https://www.mymusic.com.ng/",
+  "type": "Product / Startup",
+  "tags": [
+    "design",
+    "webdesign",
+    "ui",
+    "ux",
+    "music",
+    "blue",
+    "white",
+    "product",
+    "service"
+  ],
+  "date": "2017-01-14",
+  "blurb": "MyMusic NG is a music product on WebHunt.",
+  "image": "/media/155850204602.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}

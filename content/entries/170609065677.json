@@ -1,0 +1,27 @@
+{
+  "title": "Ojanti",
+  "link": "http://ojanti.com/",
+  "type": "Portfolio",
+  "tags": [
+    "portfolio",
+    "design",
+    "illustration",
+    "creative",
+    "dope",
+    "ui",
+    "ux",
+    "google",
+    "flatdesign",
+    "webdesign",
+    "webdevelopment",
+    "concept"
+  ],
+  "date": "2018-02-07",
+  "blurb": "Ojanti is an illustration portfolio site on WebHunt.",
+  "image": "/media/170609065677.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}

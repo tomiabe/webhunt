@@ -1,0 +1,24 @@
+{
+  "title": "Go Vote!",
+  "link": "https://govote.org.ng/#/",
+  "type": "Tool / Open Source",
+  "tags": [
+    "design",
+    "development",
+    "informational",
+    "ux",
+    "ui",
+    "frontend",
+    "app",
+    "cool",
+    "inspiration"
+  ],
+  "date": "2018-02-12",
+  "blurb": "Go Vote! is a cool tool on WebHunt.",
+  "image": "/media/170791727737.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}

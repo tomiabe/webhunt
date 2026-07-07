@@ -1,0 +1,21 @@
+{
+  "title": "Devcenter",
+  "link": "https://devcenter.co/",
+  "type": "Product / Startup",
+  "tags": [
+    "design",
+    "ui",
+    "ux",
+    "service",
+    "white",
+    "webdesign"
+  ],
+  "date": "2017-01-13",
+  "blurb": "Devcenter is a service product on WebHunt.",
+  "image": "/media/155799227472.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}

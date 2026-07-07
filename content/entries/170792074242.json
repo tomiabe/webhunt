@@ -1,0 +1,24 @@
+{
+  "title": "Go Vote!",
+  "link": "http://govote.ng/",
+  "type": "Product / Startup",
+  "tags": [
+    "design",
+    "development",
+    "vote",
+    "politics",
+    "nigeria",
+    "inspiration",
+    "informational",
+    "uiux",
+    "frontend"
+  ],
+  "date": "2018-02-12",
+  "blurb": "Go Vote! is a vote product on WebHunt.",
+  "image": "/media/170792074242.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}

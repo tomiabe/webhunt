@@ -1,0 +1,33 @@
+{
+  "title": "Cruuunchify",
+  "link": "https://cruuunchify.com/",
+  "type": "Tool / Open Source",
+  "tags": [
+    "design",
+    "product",
+    "web",
+    "api",
+    "spotify",
+    "uiux",
+    "webdevelopment",
+    "webapp",
+    "application",
+    "music",
+    "streaming",
+    "siteinspire",
+    "nigeria",
+    "engineering",
+    "animation",
+    "html",
+    "css",
+    "interaction"
+  ],
+  "date": "2020-03-03",
+  "blurb": "Cruuunchify is an api tool on WebHunt.",
+  "image": "/media/611580230879035392.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}

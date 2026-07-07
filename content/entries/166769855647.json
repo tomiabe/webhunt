@@ -1,0 +1,20 @@
+{
+  "title": "Workstation",
+  "link": "https://www.workstationng.com/",
+  "type": "Product / Startup",
+  "tags": [
+    "informational",
+    "design",
+    "webdesign",
+    "uiux",
+    "coworking"
+  ],
+  "date": "2017-10-25",
+  "blurb": "Workstation is a coworking product on WebHunt.",
+  "image": "/media/166769855647.png",
+  "credit": {
+    "type": null,
+    "name": null
+  },
+  "needs_review": false
+}
