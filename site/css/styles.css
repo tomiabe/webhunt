@@ -97,14 +97,7 @@ body {
   width: 28px;
   height: 28px;
   display: block;
-}
-
-.brand-logo-dark { display: none; }
-html[data-theme="dark"] .brand-logo-light { display: none; }
-html[data-theme="dark"] .brand-logo-dark { display: block; }
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) .brand-logo-light { display: none; }
-  html:not([data-theme="light"]) .brand-logo-dark { display: block; }
+  flex-shrink: 0;
 }
 
 .brand-mark {

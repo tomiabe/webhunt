@@ -30,17 +30,40 @@
 
   // ---------- Theme ----------
 
+  const brandLogo = document.getElementById("brand-logo");
+  const LOGO_LIGHT = "logo/webhunt-black.png";
+  const LOGO_DARK = "logo/webhunt-white.png";
+
+  function isDarkActive() {
+    const attr = document.documentElement.getAttribute("data-theme");
+    if (attr) return attr === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  function updateBrandLogo() {
+    brandLogo.src = isDarkActive() ? LOGO_DARK : LOGO_LIGHT;
+  }
+
   function applyTheme(theme) {
     if (theme) {
       document.documentElement.setAttribute("data-theme", theme);
     } else {
       document.documentElement.removeAttribute("data-theme");
     }
+    updateBrandLogo();
   }
 
   function initTheme() {
     const saved = localStorage.getItem("webhunt:theme");
-    if (saved) applyTheme(saved);
+    if (saved) {
+      applyTheme(saved);
+    } else {
+      updateBrandLogo();
+    }
+
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+      if (!localStorage.getItem("webhunt:theme")) updateBrandLogo();
+    });
   }
 
   themeToggle.addEventListener("click", () => {
@@ -55,6 +78,7 @@
   // ---------- Columns ----------
 
   function maxColsForWidth() {
+    if (gallery.clientWidth === 0) return MAX_COLS;
     const styles = getComputedStyle(gallery);
     const paddingX = parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
     const contentWidth = gallery.clientWidth - paddingX;
@@ -68,36 +92,36 @@
     colsDec.disabled = current <= MIN_COLS;
   }
 
-  function setCols(n) {
+  let requestedCols = DEFAULT_COLS;
+
+  function applyCols() {
     const max = maxColsForWidth();
-    const clamped = Math.min(max, Math.max(MIN_COLS, n));
-    document.documentElement.style.setProperty("--cols", clamped);
-    colsLabel.textContent = String(clamped);
-    localStorage.setItem("webhunt:cols", String(clamped));
-    updateColsButtons(clamped, max);
+    const effective = Math.min(max, Math.max(MIN_COLS, requestedCols));
+    document.documentElement.style.setProperty("--cols", effective);
+    colsLabel.textContent = String(effective);
+    updateColsButtons(effective, max);
+  }
+
+  function setCols(n) {
+    requestedCols = Math.min(MAX_COLS, Math.max(MIN_COLS, n));
+    localStorage.setItem("webhunt:cols", String(requestedCols));
+    applyCols();
   }
 
   function initCols() {
     const saved = parseInt(localStorage.getItem("webhunt:cols"), 10);
-    setCols(Number.isFinite(saved) ? saved : DEFAULT_COLS);
+    requestedCols = Number.isFinite(saved) ? saved : DEFAULT_COLS;
+    requestAnimationFrame(applyCols);
 
     let resizeTimer;
     window.addEventListener("resize", () => {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        setCols(parseInt(colsLabel.textContent, 10));
-      }, 150);
+      resizeTimer = setTimeout(applyCols, 150);
     });
   }
 
-  colsInc.addEventListener("click", () => {
-    const cur = parseInt(colsLabel.textContent, 10);
-    setCols(cur + 1);
-  });
-  colsDec.addEventListener("click", () => {
-    const cur = parseInt(colsLabel.textContent, 10);
-    setCols(cur - 1);
-  });
+  colsInc.addEventListener("click", () => setCols(requestedCols + 1));
+  colsDec.addEventListener("click", () => setCols(requestedCols - 1));
 
   // ---------- Data + rendering ----------
 
