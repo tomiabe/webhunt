@@ -16,7 +16,6 @@
   const modalTitle = document.getElementById("modal-title");
   const modalMeta = document.getElementById("modal-meta");
   const modalBlurb = document.getElementById("modal-blurb");
-  const modalTags = document.getElementById("modal-tags");
   const modalLink = document.getElementById("modal-link");
 
   const MIN_COLS = 2;
@@ -214,11 +213,6 @@
     modalMeta.textContent = metaParts.join(" · ");
 
     modalBlurb.textContent = entry.blurb || "";
-
-    modalTags.innerHTML = (entry.tags || [])
-      .slice(0, 10)
-      .map((t) => `<span>${escapeHtml(t)}</span>`)
-      .join("");
 
     if (entry.link) {
       modalLink.href = entry.link;
