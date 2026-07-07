@@ -21,6 +21,7 @@
   const MIN_COLS = 2;
   const MAX_COLS = 8;
   const DEFAULT_COLS = 4;
+  const MIN_CARD_WIDTH = 260;
 
   let entries = [];
   let activeType = "All";
@@ -52,16 +53,40 @@
 
   // ---------- Columns ----------
 
+  function maxColsForWidth() {
+    const styles = getComputedStyle(gallery);
+    const paddingX = parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
+    const contentWidth = gallery.clientWidth - paddingX;
+    const gap = parseFloat(styles.columnGap) || 0;
+    const fit = Math.floor((contentWidth + gap) / (MIN_CARD_WIDTH + gap));
+    return Math.min(MAX_COLS, Math.max(MIN_COLS, fit));
+  }
+
+  function updateColsButtons(current, max) {
+    colsInc.disabled = current >= max;
+    colsDec.disabled = current <= MIN_COLS;
+  }
+
   function setCols(n) {
-    const clamped = Math.min(MAX_COLS, Math.max(MIN_COLS, n));
+    const max = maxColsForWidth();
+    const clamped = Math.min(max, Math.max(MIN_COLS, n));
     document.documentElement.style.setProperty("--cols", clamped);
     colsLabel.textContent = String(clamped);
     localStorage.setItem("webhunt:cols", String(clamped));
+    updateColsButtons(clamped, max);
   }
 
   function initCols() {
     const saved = parseInt(localStorage.getItem("webhunt:cols"), 10);
     setCols(Number.isFinite(saved) ? saved : DEFAULT_COLS);
+
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        setCols(parseInt(colsLabel.textContent, 10));
+      }, 150);
+    });
   }
 
   colsInc.addEventListener("click", () => {
