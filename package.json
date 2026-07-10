@@ -1,0 +1,12 @@
+{
+  "name": "webhunt",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build-data": "node scripts/build-data.js",
+    "optimize-media": "node scripts/optimize-media.js"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

@@ -4,6 +4,19 @@ const path = require("path");
 const ROOT = path.join(__dirname, "..");
 const ENTRIES_DIR = path.join(ROOT, "content", "entries");
 const OUT_FILE = path.join(ROOT, "site", "data.json");
+const MEDIA_MAP_FILE = path.join(ROOT, "media-optimized", ".map.json");
+
+let mediaMap = {};
+if (fs.existsSync(MEDIA_MAP_FILE)) {
+  mediaMap = JSON.parse(fs.readFileSync(MEDIA_MAP_FILE, "utf-8"));
+}
+
+function remapImage(image) {
+  if (!image) return image;
+  const base = path.basename(image);
+  const mapped = mediaMap[base];
+  return mapped ? `media/${mapped}` : image;
+}
 
 const files = fs.readdirSync(ENTRIES_DIR).filter((f) => f.endsWith(".json"));
 
@@ -13,6 +26,7 @@ const entries = files.map((file) => {
   return {
     id: path.basename(file, ".json"),
     ...data,
+    image: remapImage(data.image),
   };
 });
 

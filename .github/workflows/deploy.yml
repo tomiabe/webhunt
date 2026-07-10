@@ -25,6 +25,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Optimize media
+        run: node scripts/optimize-media.js
 
       - name: Build data.json from content entries
         run: node scripts/build-data.js
@@ -33,7 +40,8 @@ jobs:
         run: |
           mkdir -p _site
           cp -r site/. _site/
-          cp -r media _site/media
+          cp -r media-optimized _site/media
+          rm -f _site/media/.map.json
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
