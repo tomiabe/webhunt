@@ -20,8 +20,8 @@
   "blurb": "Nigerian cryptocurrency exchange that let users buy and sell Bitcoin, Ethereum, and other cryptocurrencies with local currency.",
   "image": "media/170894513457.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

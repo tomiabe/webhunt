@@ -20,8 +20,8 @@
   "blurb": "AI-powered platform for transforming PDFs into chat assistants, analyzing data, and generating marketing strategies.",
   "image": "media/163173675987.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

@@ -16,8 +16,8 @@
   "blurb": "Ride-sharing platform connecting passengers with car owners traveling the same route.",
   "image": "media/155799692887.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

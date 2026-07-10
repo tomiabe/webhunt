@@ -14,8 +14,8 @@
   "blurb": "Campus-focused delivery platform at Fountain University enabling students to order food, gas refills, and package pickups.",
   "image": "media/169809417317.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

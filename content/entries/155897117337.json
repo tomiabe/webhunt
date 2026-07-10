@@ -19,8 +19,8 @@
   "blurb": "Notification API service for developers, originally a redirect service.",
   "image": "media/155897117337.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

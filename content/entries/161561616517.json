@@ -26,8 +26,8 @@
   "blurb": "WordPress plugin that enables WooCommerce shops to accept Handshake (HNS) cryptocurrency payments.",
   "image": "media/161561616517.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

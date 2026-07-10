@@ -22,8 +22,8 @@
   "blurb": "Portfolio of a designer.",
   "image": "media/160043913667.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

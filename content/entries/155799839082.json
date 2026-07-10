@@ -16,8 +16,8 @@
   "blurb": "Event management platform for registration, e-ticketing, check-in, and guest experience engagement.",
   "image": "media/155799839082.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

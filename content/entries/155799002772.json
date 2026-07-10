@@ -15,8 +15,8 @@
   "blurb": "Online fashion store selling clothing, footwear, bags, accessories, and home products.",
   "image": "media/155799002772.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

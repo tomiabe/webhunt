@@ -17,8 +17,8 @@
   "blurb": "Online exam preparation platform helping Nigerian students prepare for JAMB, WAEC, and Post UTME with mock tests and analytics.",
   "image": "media/155864368307.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

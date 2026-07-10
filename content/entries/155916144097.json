@@ -16,8 +16,8 @@
   "blurb": "AI-powered failed payment recovery tool for SaaS companies that sends personalized recovery emails to recapture lost subscription revenue.",
   "image": "media/155916144097.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

@@ -1,14 +1,14 @@
 {
   "title": "Untitled",
-  "link": null,
+  "link": "",
   "type": "Product / Startup",
   "tags": [],
   "date": "2018-03-13",
-  "blurb": null,
+  "blurb": "",
   "image": "media/171820383552.jpg",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": true
 }

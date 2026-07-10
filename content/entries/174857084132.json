@@ -23,8 +23,8 @@
   "blurb": "Fintech app for utility bill payments including electricity, gas, airtime, and DTH in Nigeria.",
   "image": "media/174857084132.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

@@ -7,10 +7,10 @@
   ],
   "date": "2021-09-24",
   "blurb": "Personal website of Tomi Abe.",
-  "image": null,
+  "image": "",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": true
 }

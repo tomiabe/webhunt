@@ -25,8 +25,8 @@
   "blurb": "Frame studio tool that lets creators design campaign frames and profile-photo overlays, then share them via a single link.",
   "image": "media/173085497687.jpg",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

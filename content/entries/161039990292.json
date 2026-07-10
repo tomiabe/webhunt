@@ -21,8 +21,8 @@
   "blurb": "Former Twitter-based writing platform that automated tweetstorms, allowing users to compose long-form content as threaded tweets.",
   "image": "media/161039990292.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

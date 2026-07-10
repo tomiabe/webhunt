@@ -21,8 +21,8 @@
   "blurb": "Fintech platform enabling users to receive money globally through custom payment links, supporting bank transfers and cryptocurrency.",
   "image": "media/161115083707.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

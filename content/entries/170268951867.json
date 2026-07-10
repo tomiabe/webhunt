@@ -21,8 +21,8 @@
   "blurb": "Crowdsourced ISP speed comparison tool that let Lagos residents benchmark internet performance across neighborhoods.",
   "image": "media/170268951867.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }

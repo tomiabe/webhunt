@@ -18,8 +18,8 @@
   "blurb": "Social fitness app that helps sports enthusiasts find teammates, join local fitness events, and book sports venues.",
   "image": "media/155965081852.png",
   "credit": {
-    "type": null,
-    "name": null
+    "type": "",
+    "name": ""
   },
   "needs_review": false
 }
