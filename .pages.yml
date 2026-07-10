@@ -8,6 +8,7 @@ content:
     type: collection
     path: content/entries
     format: json
+    filename: "{primary}.json"
     view:
       primary: title
       fields: [type, date, needs_review]
