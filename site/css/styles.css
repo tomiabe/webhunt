@@ -289,6 +289,8 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
   .site-header { padding: 1rem 1rem 0.5rem; padding-right: 3.75rem; }
   .cols-control { display: none; }
   .theme-toggle { top: 1rem; right: 1rem; }
+  .search-field { flex: 1 1 0; max-width: none; }
+  .submit-btn { flex-shrink: 0; }
 }
 
 .card {
