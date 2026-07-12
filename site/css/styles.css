@@ -121,7 +121,8 @@ body {
 
 .search-field {
   position: relative;
-  flex: 0 1 240px;
+  flex: 0 1 580px;
+  max-width: 55%;
   min-width: 0;
 }
 
