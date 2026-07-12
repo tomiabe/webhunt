@@ -34,6 +34,8 @@
         <button type="button" class="cols-btn" id="cols-inc" aria-label="More columns">+</button>
       </div>
 
+      <button type="button" class="submit-btn" id="submit-trigger">Submit a site</button>
+
       <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
         <svg class="icon icon-sun" viewBox="0 0 20 20" fill="none" aria-hidden="true">
           <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
@@ -68,6 +70,18 @@
         <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
+  </dialog>
+
+  <dialog id="submit-modal" class="submit-modal">
+    <button type="button" class="modal-close" id="submit-close" aria-label="Close">✕</button>
+    <form id="submit-form" class="submit-form">
+      <h2>Make a Submission</h2>
+      <p class="submit-sub">Know a great site, product, or digital experience made by an African team or individual? Drop the link below.</p>
+      <label for="submit-link" class="submit-label">Link</label>
+      <input type="url" id="submit-link" name="link" placeholder="https://…" required autocomplete="off" />
+      <button type="submit" class="submit-send" id="submit-send">Send</button>
+      <p class="submit-status" id="submit-status" role="status"></p>
+    </form>
   </dialog>
 
   <footer class="site-footer">

@@ -18,6 +18,13 @@
   const modalBlurb = document.getElementById("modal-blurb");
   const modalLink = document.getElementById("modal-link");
   const scrollTopBtn = document.getElementById("scroll-top");
+  const submitTrigger = document.getElementById("submit-trigger");
+  const submitModal = document.getElementById("submit-modal");
+  const submitClose = document.getElementById("submit-close");
+  const submitForm = document.getElementById("submit-form");
+  const submitLinkInput = document.getElementById("submit-link");
+  const submitSendBtn = document.getElementById("submit-send");
+  const submitStatus = document.getElementById("submit-status");
 
   const MIN_COLS = 2;
   const MAX_COLS = 8;
@@ -299,6 +306,68 @@
   });
   modal.addEventListener("cancel", () => closeModal());
 
+  // ---------- Submission form ----------
+
+  const SUBMIT_FORM_ACTION =
+    "https://docs.google.com/forms/d/e/1FAIpQLScdqFDtiTkVX5NWgj1Eu0MyK26JCCkCyxmXMqIK-3pSg37ujw/formResponse";
+  const SUBMIT_LINK_ENTRY = "entry.2029035446";
+
+  function openSubmitModal() {
+    document.body.style.overflow = "hidden";
+    submitStatus.textContent = "";
+    submitStatus.removeAttribute("data-state");
+    submitForm.hidden = false;
+    submitLinkInput.value = "";
+    submitModal.showModal();
+    submitLinkInput.focus();
+  }
+
+  function closeSubmitModal() {
+    if (submitModal.open) submitModal.close();
+    document.body.style.overflow = "";
+  }
+
+  function initSubmitModal() {
+    submitTrigger.addEventListener("click", openSubmitModal);
+    submitClose.addEventListener("click", closeSubmitModal);
+    submitModal.addEventListener("click", (e) => {
+      if (e.target === submitModal) closeSubmitModal();
+    });
+    submitModal.addEventListener("cancel", () => closeSubmitModal());
+
+    submitForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const link = submitLinkInput.value.trim();
+      if (!link) return;
+
+      submitSendBtn.disabled = true;
+      submitStatus.textContent = "Sending…";
+      submitStatus.removeAttribute("data-state");
+
+      const body = new URLSearchParams();
+      body.set(SUBMIT_LINK_ENTRY, link);
+
+      try {
+        await fetch(SUBMIT_FORM_ACTION, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body,
+        });
+        submitStatus.textContent = "Thanks! We'll take a look.";
+        submitStatus.setAttribute("data-state", "success");
+        submitForm.reset();
+        setTimeout(closeSubmitModal, 1600);
+      } catch (err) {
+        submitStatus.textContent = "Something went wrong — please try again.";
+        submitStatus.setAttribute("data-state", "error");
+        console.error("Submission failed", err);
+      } finally {
+        submitSendBtn.disabled = false;
+      }
+    });
+  }
+
   // ---------- Scroll to top ----------
 
   function initScrollTop() {
@@ -318,6 +387,7 @@
     initTheme();
     initCols();
     initScrollTop();
+    initSubmitModal();
     renderTypeFilters();
 
     try {

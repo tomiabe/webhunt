@@ -194,6 +194,24 @@ body {
   text-align: center;
 }
 
+.submit-btn {
+  flex-shrink: 0;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--fg);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+.submit-btn:hover {
+  background: var(--border);
+}
+
 .theme-toggle {
   width: 2.2rem;
   height: 2.2rem;
@@ -355,6 +373,102 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 @keyframes modal-in {
   from { opacity: 0; transform: scale(0.94) translateY(10px); }
   to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.submit-modal {
+  border: none;
+  border-radius: 18px;
+  padding: 0;
+  max-width: min(420px, 92vw);
+  width: 100%;
+  color: var(--fg);
+  background: var(--bg);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.submit-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.submit-modal[open] {
+  animation: modal-in 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.submit-form {
+  padding: 2rem 1.75rem 1.85rem;
+}
+
+.submit-form h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+
+.submit-sub {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.submit-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+#submit-link {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--fg);
+  font: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+#submit-link:focus {
+  border-color: var(--focus);
+}
+
+.submit-send {
+  width: 100%;
+  margin-top: 1.1rem;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--fg);
+  color: var(--bg);
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.submit-send:hover {
+  opacity: 0.85;
+}
+.submit-send:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submit-status {
+  margin: 0.85rem 0 0;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+  text-align: center;
+}
+.submit-status[data-state="success"] {
+  color: #1a9e5c;
+}
+.submit-status[data-state="error"] {
+  color: #d1453b;
 }
 
 .modal-close {
